@@ -28,7 +28,7 @@ const Layout = async ({ children }: { children: React.ReactNode }) => {
           <blockquote className="auth-blockquote">
             Дипломын ажлын хэрэгжүүлэлт: Микросервист суурилсан хиймэл оюун
             агентууд. Демо: Монгол, Гадаад хувьцааны хөрөнгийн зах зээлийн
-            мэдээг хиймэл оюунаар дүрслэх
+            мэдээг хиймэл оюунаар шинжлэн дүрслэх
           </blockquote>
           <div className="flex items-center justify-between">
             <div>

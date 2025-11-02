@@ -97,14 +97,14 @@ export const WELCOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/wrtdnhebkn/stock/logo.png?updatedAt=1762102093843" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
                     <!-- Dashboard Preview Image -->
                     <tr>
                         <td align="center" class="dashboard-preview" style="padding: 40px 40px 0px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/dashboard-preview.png?updatedAt=1756378548102" alt="Redona Dashboard Preview" width="100%" style="max-width: 520px; width: 100%; height: auto; border-radius: 12px; border: 1px solid #30333A;">
+                            <img src="https://ik.imagekit.io/wrtdnhebkn/stock/dashboard-preview.png?updatedAt=1762102093965" alt="Redona Dashboard Preview" width="100%" style="max-width: 520px; width: 100%; height: auto; border-radius: 12px; border: 1px solid #30333A;">
                         </td>
                     </tr>
                     
@@ -128,13 +128,13 @@ export const WELCOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <!-- Feature List -->
                             <ul class="mobile-text dark-text-secondary" style="margin: 0 0 30px 0; padding-left: 20px; font-size: 16px; line-height: 1.6; color: #CCDADC;">
                                 <li style="margin-bottom: 12px;">Дуртай хувьцаануудаар хяналтын жагсаалт үүсгэх</li>
-                                <li style="margin-bottom: 12px;">Үнийн дүнгийн болон эргэлтийн хөдөлгөөнийг алдахгүйгээр мэдэгдэл авах</li>
+                                <li style="margin-bottom: 12px;">Үнийн дүнгийн болон эргэлтийн хөдөлгөөнийг алдахгүйгээр мэдээлэл авах</li>
                                 <li style="margin-bottom: 12px;">Хяналтын самбарт чиг хандлага, зах зээлийн мэдээллийг судлах</li>
                             </ul>
                             
                             <!-- Additional Text -->
                             <p class="mobile-text dark-text-secondary" style="margin: 0 0 40px 0; font-size: 16px; line-height: 1.6; color: #CCDADC;">
-                                Бид танд цаг тухайд нь шинэчлэл, дүн шинжилгээ, мэдэгдлээр мэдээлэх болно. Ингэснээр та зөв шийдвэр гаргахад анхаарч чадна.
+                                Бид танд цаг тухайд нь шинэчлэл, дүн шинжилгээг мэдээллэх болно.
                             </p>
                             
                             <!-- CTA Button -->
@@ -150,7 +150,7 @@ export const WELCOME_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             
                             <!-- Footer Text -->
                             <p class="mobile-text dark-text-muted" style="margin: 40px 0 0 0; font-size: 14px; line-height: 1.5; color: #CCDADC !important; text-align: center;">
-                               Redona HQ, 200 Market Street, San Francisco, CA 94105<br>
+                               Улаанбаатар, Монгол улсын их сургууль, 8-р байр<br>
                                 <a href="https://radnaabazar.com" style="color: #CCDADC !important; text-decoration: underline;">Раднаагийн портфолиод зочлох</a><br>
                                 © 2025 Раднаагийн систем
                             </p>
@@ -259,7 +259,7 @@ export const NEWS_SUMMARY_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/wrtdnhebkn/stock/logo.png?updatedAt=1762102093843" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
@@ -309,7 +309,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="x-apple-disable-message-reformatting">
-    <title>Үнийн мэдэгдэл: {{symbol}} Дээд үнэ/зорилгод хүрлээ</title>
+    <title>Үнийн мэдээ: {{symbol}} Дээд үнэ/зорилгод хүрлээ</title>
     <!--[if mso]>
     <noscript>
         <xml>
@@ -408,7 +408,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/Redona?updatedAt=1756378431634" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/wrtdnhebkn/stock/logo.png?updatedAt=1762102093843" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
@@ -457,7 +457,7 @@ export const STOCK_ALERT_UPPER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <!-- Alert Details -->
                             <div class="dark-info-box" style="background-color: #212328; border-radius: 8px; padding: 20px; margin-bottom: 30px;">
                                 <h3 class="dark-text" style="margin: 0 0 15px 0; font-size: 18px; font-weight: 600; color: #ffffff;">
-                                    Мэдэгдэл
+                                    Мэдээлэл
                                 </h3>
                                 <p class="mobile-text dark-text-secondary" style="margin: 0 0 10px 0; font-size: 16px; line-height: 1.5; color: #9ca3af;">
                                     <strong>Зорилтот үнэ:</strong> {{targetPrice}}
@@ -517,7 +517,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="x-apple-disable-message-reformatting">
-    <title>Үнийн мэдэгдэл: {{symbol}} Доод үнэ/зорилгод хүрлээ</title>
+    <title>Үнийн мэдээ: {{symbol}} Доод үнэ/зорилгод хүрлээ</title>
     <!--[if mso]>
     <noscript>
         <xml>
@@ -616,7 +616,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/wrtdnhebkn/stock/logo.png?updatedAt=1762102093843" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
@@ -665,7 +665,7 @@ export const STOCK_ALERT_LOWER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <!-- Alert Details -->
                             <div class="dark-info-box" style="background-color: #212328; border-radius: 8px; padding: 20px; margin-bottom: 30px;">
                                 <h3 class="dark-text" style="margin: 0 0 15px 0; font-size: 18px; font-weight: 600; color: #ffffff;">
-                                    Мэдэгдэл
+                                    Мэдээлэл
                                 </h3>
                                 <p class="mobile-text dark-text-secondary" style="margin: 0 0 10px 0; font-size: 16px; line-height: 1.5; color: #9ca3af;">
                                     <strong>Зорилтот үнэ:</strong> {{targetPrice}}
@@ -725,7 +725,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="x-apple-disable-message-reformatting">
-    <title>Үнийн дүнгийн/эргэлтийн мэдэгдэл: {{symbol}}</title>
+    <title>Үнийн дүнгийн/эргэлтийн мэдээ: {{symbol}}</title>
     <!--[if mso]>
     <noscript>
         <xml>
@@ -815,7 +815,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/wrtdnhebkn/stock/logo.png?updatedAt=1762102093843" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
@@ -826,7 +826,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
                                 <tr>
                                     <td align="center">
                                         <h1 class="mobile-title" style="margin: 0 0 10px 0; font-size: 24px; font-weight: 700; color: #ffffff; line-height: 1.2;">
-                                            📊 Эргэлтийн мэдэгдэл
+                                            📊 Эргэлтийн мэдээ
                                         </h1>
                                         <p style="margin: 0; font-size: 16px; color: #ffffff; opacity: 0.9;">
                                             {{timestamp}}
@@ -911,7 +911,7 @@ export const VOLUME_ALERT_EMAIL_TEMPLATE = `<!DOCTYPE html>
                             <!-- Disclaimer -->
                             <div class="dark-info-box" style="background-color: #1f2937; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #374151;">
                                 <p class="dark-text-muted" style="margin: 0; font-size: 13px; line-height: 1.4; color: #6b7280; text-align: center;">
-                                    <strong>Анхааруулга:</strong> Энэ мэдэгдэл нь зөвхөн мэдээллийн зорилготой. Өндөр эргэлт нь үнийн чиглэлийг баталгаажуулдаггүй. Хөрөнгө оруулалтын шийдвэр гаргахаасаа өмнө үргэлж өөрийн судалгаа хийгээрэй.
+                                    <strong>Анхааруулга:</strong> Энэхүү мэдэглэл нь зөвхөн мэдээллийн зорилготой. Өндөр эргэлт нь үнийн чиглэлийг илэрхийлэхгүй. Хөрөнгө оруулалтын шийдвэр гаргахаасаа өмнө үргэлж өөрийн судалгаа хийгээрэй.
                                 </p>
                             </div>
                             
@@ -1037,7 +1037,7 @@ export const INACTIVE_USER_REMINDER_EMAIL_TEMPLATE = `<!DOCTYPE html>
                     <!-- Header with Logo -->
                     <tr>
                         <td align="left" class="mobile-header-padding" style="padding: 40px 40px 20px 40px;">
-                            <img src="https://ik.imagekit.io/a6fkjou7d/logo.png?updatedAt=1756378431634" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
+                            <img src="https://ik.imagekit.io/wrtdnhebkn/stock/logo.png?updatedAt=1762102093843" alt="Redona Logo" width="150" style="max-width: 100%; height: auto;">
                         </td>
                     </tr>
                     
