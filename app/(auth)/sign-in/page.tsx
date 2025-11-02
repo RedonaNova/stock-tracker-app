@@ -8,7 +8,7 @@ import FooterLink from "@/components/forms/FooterLink";
 import { toast } from "sonner";
 // import { signInEmail } from "better-auth/api";
 import { useRouter } from "next/navigation";
-import { signInWithEmail, signUpWithEmail } from "@/lib/auth/actions";
+import { signInWithEmail, signUpWithEmail } from "@/lib/actions/auth.actions";
 
 const SignIn = () => {
   const router = useRouter();
