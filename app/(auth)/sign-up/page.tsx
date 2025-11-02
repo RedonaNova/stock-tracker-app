@@ -4,6 +4,7 @@ import FooterLink from "@/components/forms/FooterLink";
 import InputField from "@/components/forms/InputField";
 import SelectField from "@/components/forms/SelectField";
 import { Button } from "@/components/ui/button";
+import { signUpWithEmail } from "@/lib/auth/actions";
 import {
   INVESTMENT_GOALS,
   PREFERRED_INDUSTRIES,
@@ -11,8 +12,11 @@ import {
 } from "@/lib/constants";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 const SignUp = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -35,8 +39,18 @@ const SignUp = () => {
   ) => {
     try {
       console.log(data);
+      const result = await signUpWithEmail(data);
+      if (result.success) {
+        toast.success("Бүртгүүлэх амжилттай");
+        router.push("/");
+      }
+      //SignUp with email
     } catch (error) {
       console.error(error);
+      toast.error("Бүртгүүлэлт амжилтгүй", {
+        description:
+          error instanceof Error ? error.message : "Хаяг үүсгэхэд алдаа гарлаа",
+      });
     }
   };
   return (

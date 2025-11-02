@@ -1,7 +1,14 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import Image from "next/image";
-const Layout = ({ children }: { children: React.ReactNode }) => {
+import { auth } from "@/lib/better-auth/auth";
+import { redirect } from "next/navigation";
+import { headers } from "next/headers";
+const Layout = async ({ children }: { children: React.ReactNode }) => {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+  if (session?.user) redirect("/");
   return (
     <main className="auth-layout">
       <section className="auth-left-section scrollbar-hide-default">
@@ -19,8 +26,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <section className="auth-right-section">
         <div className="z-10 relative lg:mt-4 lg:mb-16">
           <blockquote className="auth-blockquote">
-            E-commerce, санхүү, арилжаа, судалгаа шинжилгээний системийг
-            нэвтрүүлсэн Backend хөгжүүлэгч
+            Дипломын ажлын хэрэгжүүлэлт: Микросервист суурилсан хиймэл оюун
+            агентууд. Демо: Монгол, Гадаад хувьцааны хөрөнгийн зах зээлийн
+            мэдээг хиймэл оюунаар дүрслэх
           </blockquote>
           <div className="flex items-center justify-between">
             <div>

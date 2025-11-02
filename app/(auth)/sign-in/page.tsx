@@ -1,6 +1,6 @@
 "use client";
 
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import InputField from "@/components/forms/InputField";
 import FooterLink from "@/components/forms/FooterLink";
@@ -8,6 +8,7 @@ import FooterLink from "@/components/forms/FooterLink";
 import { toast } from "sonner";
 // import { signInEmail } from "better-auth/api";
 import { useRouter } from "next/navigation";
+import { signInWithEmail, signUpWithEmail } from "@/lib/auth/actions";
 
 const SignIn = () => {
   const router = useRouter();
@@ -23,15 +24,25 @@ const SignIn = () => {
     mode: "onBlur",
   });
 
-  const onSubmit = async (data: SignInFormData) => {
+  const onSubmit: SubmitHandler<SignInFormData> = async (
+    data: SignInFormData
+  ) => {
     try {
-      //   const result = await signInWithEmail(data);
-      //   if (result.success) router.push("/");
       console.log(data);
-    } catch (e) {
-      console.error(e);
-      toast.error("Sign in failed", {
-        description: e instanceof Error ? e.message : "Failed to sign in.",
+      const result = await signInWithEmail(data);
+      if (result.success) {
+        toast.success("Тавтай морилно уу");
+        router.push("/");
+      } else {
+        toast.error("Нэвтрэлт амжилтгүй", {
+          description: result.error || "Нэвтрэхэд алдаа гарлаа",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("Нэвтрэлт амжилтгүй", {
+        description:
+          error instanceof Error ? error.message : "Нэвтрэхэд алдаа гарлаа",
       });
     }
   };
@@ -49,7 +60,10 @@ const SignIn = () => {
           error={errors.email}
           validation={{
             required: "И-мэйл заавал оруулна уу",
-            pattern: /^\w+@\w+\.\w+$/,
+            pattern: {
+              value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+              message: "И-мэйл буруу байна",
+            },
           }}
         />
 
@@ -60,7 +74,13 @@ const SignIn = () => {
           type="password"
           register={register}
           error={errors.password}
-          validation={{ required: "Нууц үг заавал оруулна уу", minLength: 8 }}
+          validation={{
+            required: "Нууц үг заавал оруулна уу",
+            minLength: {
+              value: 8,
+              message: "Нууц үг хамгийн багадаа 8 оронтой байх ёстой",
+            },
+          }}
         />
 
         <Button
