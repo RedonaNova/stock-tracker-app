@@ -21,7 +21,7 @@ export const sendWelcomeEmail = async ({
   );
 
   const mailOptions = {
-    from: `AI Агент - <${process.env.NODEMAILER_EMAIL!}>`,
+    from: `"AI Агент" <${process.env.NODEMAILER_EMAIL!}>`,
     to: email,
     subject: "Тавтай морилно уу",
     text: "Манай системд нэгдсэнд баярлалаа. Танд хөрөнгийн зах зээлийн хөдөлгөөнийг ухаалгаар харах хэрэглүүртэй боллоо.",
@@ -45,10 +45,10 @@ export const sendNewsSummaryEmail = async ({
   ).replace("{{newsContent}}", newsContent);
 
   const mailOptions = {
-    from: `"Signalist News" <signalist@jsmastery.pro>`,
+    from: `"AI Агент" <${process.env.NODEMAILER_EMAIL!}>`,
     to: email,
-    subject: `📈 Market News Summary Today - ${date}`,
-    text: `Today's market news summary from Signalist`,
+    subject: `Өнөөдрийн зах зээлийн мэдээ - ${date}`,
+    text: `Раднаабазарын дамжуулсан зах зээлийн мэдээ`,
     html: htmlTemplate,
   };
 

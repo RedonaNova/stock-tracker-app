@@ -41,7 +41,7 @@ const SignUp = () => {
       console.log(data);
       const result = await signUpWithEmail(data);
       if (result.success) {
-        toast.success("Бүртгүүлэх амжилттай");
+        toast.success("Бүртгүүлэлт амжилттай");
         router.push("/");
       }
       //SignUp with email
