@@ -3,7 +3,9 @@ import React from "react";
 import Image from "next/image";
 import NavItems from "@/components/NavItems";
 import UserDropdown from "@/components/UserDropdown";
-const Header = ({ user }: { user: User }) => {
+import { searchStocks } from "@/lib/actions/finnhub.actions";
+const Header = async ({ user }: { user: User }) => {
+  const initialStocks: StockWithWatchlistStatus[] = await searchStocks();
   return (
     <header className="header top-0 header">
       <div className="container header-wrapper">
@@ -17,9 +19,9 @@ const Header = ({ user }: { user: User }) => {
           />
         </Link>
         <nav className="hidden sm:block">
-          <NavItems />
+          <NavItems initialStocks={initialStocks} />
         </nav>
-        <UserDropdown user={user} />
+        <UserDropdown user={user} initialStocks={initialStocks} />
       </div>
     </header>
   );
